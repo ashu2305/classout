@@ -1,0 +1,120 @@
+@import '../../../styles/styleguide.scss';
+
+.multi-select-container {
+  label {
+    font-size: 12px;
+    font-family: $heading-font-family;
+    font-weight: 600;
+    text-align: left;
+    color: #6e688f;
+    text-transform: uppercase;
+
+    .required {
+      display: inline-block;
+      margin-left: 2px;
+      color: #f85071;
+    }
+
+    .notRequired {
+      display: none;
+    }
+  }
+}
+
+.multiSelect-container {
+  margin-top: 8px;
+
+  .multiSelect__control {
+    border: solid 1px #bed5f7;
+    background-color: transparent;
+    border-radius: 0;
+
+    .multiSelect__multi-value {
+      border-radius: 2.5px;
+      background-color: #e8f6f1;
+      padding: 8px;
+
+      .multiSelect__multi-value__remove {
+        cursor: pointer;
+
+        svg {
+          height: 16px;
+          width: 16px;
+        }
+      }
+    }
+
+    .multiSelect__indicator {
+      color: #5b539a;
+    }
+
+    .multiSelect__placeholder {
+      font-size: 12px;
+      font-family: $heading-font-family;
+      font-weight: 600;
+      text-align: left;
+      color: #6e688f;
+    }
+
+    .multiSelect__clear-indicator {
+      display: none;
+    }
+
+    .multiSelect__indicator-separator {
+      display: none;
+    }
+  }
+
+  .multiSelect__control--is-focused {
+    border: solid 1px #bed5f7;
+    box-shadow: none;
+
+    &:hover {
+      border-color: #bed5f7;
+    }
+  }
+
+  .multiSelect__menu {
+    border: solid 1px #bed5f7;
+    border-radius: 0;
+
+
+    .multiSelect__menu-list {
+      &::-webkit-scrollbar-track {
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #e5ebf5;
+      }
+    }
+  }
+}
+
+.multiSelect__multi-value {
+  .multiSelect__multi-value__label {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.33;
+    text-align: left;
+    color: #287a5d;
+  }
+
+  .multiSelect__multi-value__remove {
+    &:hover {
+      background-color: transparent;
+      color: #5b539a;
+    }
+  }
+}
+
+.multiSelect__options {
+  &:hover {
+    background-color: #e8f6f1;
+  }
+}

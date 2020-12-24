@@ -1,0 +1,17 @@
+.congrats h1{
+    font-size: 40px;
+}
+
+.congrats h4{
+    font-size: 30px;
+}
+.congrats h5{
+    font-size: 20px;
+}
+
+.congrats .linkText{
+    width: 450px; 
+    font-size: 11px; 
+    margin-right: 20px; 
+    height: 34px; 
+}

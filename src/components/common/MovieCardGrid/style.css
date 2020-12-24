@@ -1,0 +1,338 @@
+/* light mode variables */
+/* dark mode variables */
+/* font family */
+/*Fonts - sizes
+ --------------------------*/
+/* 14px */
+/* 40px */
+/* 30px */
+/* 24px */
+/* 20px */
+/* 18px */
+/* 16px */
+/* 12px */
+/* 10px */
+/* 8px */
+h1 {
+  font-size: 2.143rem; }
+
+h2 {
+  font-size: 1.714rem; }
+
+h3 {
+  font-size: 1.286rem; }
+
+/* Base Theme */
+.movieCard {
+  height: 330px;
+  width: 170px;
+  box-shadow: 3px 4px 12px 1px rgba(205, 214, 230, 0.38);
+  border: solid 1px #ffffff;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column; }
+  .movieCard .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 11px;
+    letter-spacing: 0.55px;
+    text-align: left;
+    color: #b5aac1; }
+  .movieCard .hideHeader {
+    display: none; }
+  .movieCard .cardImage {
+    width: 100%;
+    margin: 12px 0;
+    height: 225px;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #edf4fe; }
+  .movieCard .headings {
+    width: 100%; }
+  .movieCard .selected {
+    display: flex; }
+  .movieCard .showDelete {
+    display: flex; }
+  .movieCard .buttons {
+    align-items: center;
+    background-color: rgba(22, 21, 78, 0.72);
+    border-radius: 5px;
+    color: #000;
+    flex-direction: column;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transition: all .2s ease-in-out; }
+    .movieCard .buttons.selected {
+      bottom: 0;
+      height: 100%;
+      padding: 6px 10px; }
+      .movieCard .buttons.selected .buttons-header {
+        display: block;
+        padding-top: 10px; }
+        .movieCard .buttons.selected .buttons-header .icons-btn {
+          display: none; }
+  .movieCard:hover {
+    border-color: #f1f1f1; }
+    .movieCard:hover .buttons {
+      bottom: 0;
+      height: 100%;
+      padding: 6px 10px; }
+      .movieCard:hover .buttons .buttons-header {
+        display: flex; }
+      .movieCard:hover .buttons .view-button {
+        display: flex; }
+    .movieCard:hover .hideMe {
+      display: none; }
+  .movieCard.selected:hover .cardImage .buttons .view-button {
+    display: none; }
+  .movieCard .cardImage .img-overlay {
+    align-items: center;
+    display: inline-flex;
+    height: 225px;
+    justify-content: center; }
+  .movieCard .cardImage .movieThumbnail {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px; }
+  .movieCard .cardImage .no-img-available, .movieCard .cardImage.no-img-available .movieThumbnail {
+    height: auto;
+    width: 50%; }
+  .movieCard .headings {
+    font-family: "Montserrat-Medium", sans-serif; }
+    .movieCard .headings .subHeading {
+      text-transform: uppercase;
+      font-size: 10px;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.6;
+      letter-spacing: normal;
+      text-align: left;
+      color: #5449d4; }
+      .movieCard .headings .subHeading p {
+        font-family: "Montserrat-Medium", sans-serif; }
+    .movieCard .headings .mainHeading h6 {
+      color: #3b385f;
+      font-family: Montserrat-Medium, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      padding-top: 5px;
+      text-align: left; }
+  .movieCard .buttons .buttons-header {
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    height: fit-content; }
+    .movieCard .buttons .buttons-header .checkBoxBtn {
+      width: 45%;
+      display: flex;
+      align-items: center; }
+      .movieCard .buttons .buttons-header .checkBoxBtn .checkbox {
+        margin-bottom: 0;
+        height: 100%; }
+        .movieCard .buttons .buttons-header .checkBoxBtn .checkbox label {
+          border-radius: 50%; }
+          .movieCard .buttons .buttons-header .checkBoxBtn .checkbox label::before {
+            border-radius: 50%; }
+      .movieCard .buttons .buttons-header .checkBoxBtn .icon-edit {
+        background-color: transparent;
+        color: #cecbdc;
+        padding: 2px; }
+    .movieCard .buttons .buttons-header .icons-btn {
+      display: flex;
+      width: 55%;
+      align-items: center;
+      justify-content: space-between;
+      color: #cecbdc; }
+      .movieCard .buttons .buttons-header .icons-btn .icon-edit {
+        background-color: transparent;
+        padding: 2px; }
+      .movieCard .buttons .buttons-header .icons-btn .icon-del {
+        background-color: transparent;
+        padding: 2px; }
+      .movieCard .buttons .buttons-header .icons-btn .icon-unpublish {
+        padding: 2px; }
+  .movieCard .buttons .view-button {
+    align-items: center;
+    display: none;
+    height: 100%;
+    justify-content: center;
+    margin-top: -20px; }
+    .movieCard .buttons .view-button .viewBtn {
+      background-color: rgba(22, 21, 78, 0.6);
+      border-radius: 5px;
+      border: solid 1px #b5b6d3;
+      opacity: .8;
+      transition: opacity .2s ease; }
+      .movieCard .buttons .view-button .viewBtn:hover {
+        opacity: 1; }
+  .movieCard .buttons .deleteOptions {
+    background-color: red;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px; }
+    .movieCard .buttons .deleteOptions .del-text p {
+      font-size: 14px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      font-family: "Montserrat-Medium", sans-serif;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff; }
+    .movieCard .buttons .deleteOptions .del-text small {
+      font-size: 11px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      font-family: "Montserrat-Regular", sans-serif;
+      line-height: 1.36;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff; }
+    .movieCard .buttons .deleteOptions .del-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .movieCard .buttons .deleteOptions .popup-del-btn {
+      font-size: 12px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      padding: 10px;
+      letter-spacing: normal;
+      text-align: left;
+      color: #3b385f;
+      background-color: white;
+      font-family: "Montserrat-SemiBold", sans-serif; }
+    .movieCard .buttons .deleteOptions .cancel-btn {
+      background-color: transparent;
+      color: white;
+      margin-top: 5px; }
+  .movieCard .buttons .unpublishOptions {
+    background-color: #16154e;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    padding: 15px; }
+    .movieCard .buttons .unpublishOptions .unpublish-text p {
+      font-size: 14px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      font-family: "Montserrat-Medium", sans-serif;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff; }
+    .movieCard .buttons .unpublishOptions .unpublish-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .movieCard .buttons .unpublishOptions .popup-btn {
+      font-size: 12px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      padding: 0 37px;
+      letter-spacing: normal;
+      text-align: left;
+      color: #3b385f;
+      background-color: white;
+      font-family: "Montserrat-SemiBold", sans-serif; }
+    .movieCard .buttons .unpublishOptions .cancel-btn {
+      background-color: transparent;
+      color: white;
+      margin-top: 5px; }
+  .movieCard .buttons .showPopUp {
+    display: flex; }
+  .movieCard .hideMe {
+    display: none; }
+  .movieCard .icon-editorial:before {
+    color: #ffffff; }
+  .movieCard.greyScale .img-overlay {
+    filter: grayscale(100%); }
+  .movieCard.greyScale.selected .img-overlay {
+    filter: grayscale(100%); }
+  .movieCard.landscape {
+    width: 220px;
+    height: 190px; }
+    .movieCard.landscape .cardImage .img-overlay {
+      height: 110px; }
+  .movieCard.smallCard {
+    height: 225px; }
+    .movieCard.smallCard .cardImage {
+      height: 120px; }
+
+.vr-dark-mode .movieCard {
+  box-shadow: 2.5px 4.3px 12.2px 1.4px rgba(22, 19, 36, 0.38);
+  border-color: #302b4e;
+  background-color: #27233e;
+  transition: all 1s ease-in-out; }
+  .vr-dark-mode .movieCard .headings .subHeading {
+    color: #90a2dc; }
+  .vr-dark-mode .movieCard .headings .mainHeading {
+    color: #b5aac1; }
+  .vr-dark-mode .movieCard:hover .buttons {
+    background-color: rgba(22, 21, 78, 0.72); }
+
+.toolsBtn {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  transition: transform .2s ease-in-out; }
+  .toolsBtn .tooltiptext {
+    visibility: hidden;
+    background-color: #3b385f;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 2px 10px;
+    font-size: 10px;
+    line-height: 15px;
+    position: absolute;
+    z-index: 1;
+    bottom: 50%;
+    right: 50%;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    font-family: "Montserrat-Medium", sans-serif;
+    transform: translateX(50%); }
+    .toolsBtn .tooltiptext:after {
+      content: " ";
+      position: absolute;
+      top: 100%;
+      right: 50%;
+      border-width: 4px;
+      border-style: solid;
+      border-color: #3b385f transparent transparent transparent;
+      transform: translateX(50%); }
+  .toolsBtn:hover {
+    color: #ffffff;
+    transform: translateY(-8px); }
+    .toolsBtn:hover .tooltiptext {
+      visibility: visible; }
+
+/*# sourceMappingURL=style.css.map */

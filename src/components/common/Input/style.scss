@@ -1,0 +1,37 @@
+@import '../../../styles//styleguide.scss';
+
+.form-input {
+  font-family: Montserrat;
+  font-size: 12px;
+  text-align: left;
+  label {
+    font-family: $heading-font-family;
+    display: block;
+    margin-bottom: 8px;
+    color: #6e688f;
+    text-transform: uppercase;
+  }
+  input {
+    font-family: $heading-font-family;
+    width: 100%;
+    padding: 10px 12px;
+    border: solid 1px #bed5f7;
+    background-color: #ffffff;
+    // border-radius: 5px;
+    color: #171a1f;
+    outline-color: #bed5f7;
+    height: 38px;
+    line-height: 38px;
+    &:focus {
+      box-shadow: 4.3px 7.4px 19.4px 2.2px rgba(214, 224, 244, 0.74);
+      border: solid 1px #bed5f7;
+      background-color: #ffffff;
+    }
+  }
+  .inputErr{
+    border: 1px solid red;
+  }
+  .err{
+    color: red;
+  }
+}

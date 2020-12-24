@@ -1,0 +1,41 @@
+@import "../../../styles/styleguide.scss";
+
+.vd-myprofile {
+  .myprofile-header {
+    padding: 32px 65px;
+
+    span {
+      cursor: pointer;
+      font-family: $Montserrat-Medium;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .6px;
+      color: $label-color;
+
+      &:first-child {
+        margin-right: 50px;
+      }
+    }
+
+    .active {
+      font-family: $Montserrat-Bold;
+      color: $text-color;
+      padding-bottom: 10px;
+      border-radius: 1px;
+      border-bottom: 2.5px solid $primary-color;
+    }
+  }
+
+  .myprofile-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
+    .innerContainer {
+      max-width: 430px;
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}

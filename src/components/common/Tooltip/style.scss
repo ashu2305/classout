@@ -1,0 +1,89 @@
+.tooltip {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+
+  &:hover {
+    border-radius: 3px;
+    background-color: #5449d4;
+    width: 40px;
+    height: 25px;
+    line-height: 25px;
+    color: white;
+
+    .tooltip-wrapper::after {
+      content: "";
+      position: absolute;
+      top: 18px;
+      right: -18px;
+      z-index: 20;
+      margin-top: -5px;
+      border-width: 9px;
+      border-style: solid;
+      border-color: transparent transparent transparent white;
+    }
+
+    //.tooltip-wrapper::before {
+    //  content: "";
+    //  position: absolute;
+    //  top: 0;
+    //  width: 20px;
+    //  right: -15px;
+    //  padding-right: 10px;
+    //  padding-bottom: 100%;
+    //}
+
+    .tooltiptext {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .tooltip-wrapper {
+    cursor: default;
+    position: absolute;
+    top: -10px;
+    right: 49px;
+    z-index: 1;
+  }
+
+  .tooltiptext {
+    box-shadow: 4.3px 7.4px 19.4px 2.2px rgba(214, 224, 244, 0.74);
+    text-transform: capitalize;
+    display: none;
+    background-color: white;
+    color: #00895c;
+    text-align: left;
+    border-radius: 6px;
+    padding: 13px 12px 12px 10px;
+    letter-spacing: 1px;
+
+    .innerText {
+      background-color: #e0faf1;
+      margin-bottom: 5px;
+      padding: 1px 8px;
+      width: -moz-fit-content;
+      width: fit-content;
+      border-radius: 3px;
+    }
+  }
+
+  .scroll {
+    height: 170px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #e5ebf5;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+/* light mode variables */
+/* dark mode variables */
+/* font family */
+/*Fonts - sizes
+ --------------------------*/
+/* 14px */
+/* 40px */
+/* 30px */
+/* 24px */
+/* 20px */
+/* 18px */
+/* 16px */
+/* 12px */
+/* 10px */
+/* 8px */
+h1 {
+  font-size: 2.143rem; }
+
+h2 {
+  font-size: 1.714rem; }
+
+h3 {
+  font-size: 1.286rem; }
+
+/* Base Theme */
+.checkbox {
+  display: flex;
+  align-items: center;
+  line-height: normal;
+  margin-bottom: 12px;
+  position: relative; }
+  .checkbox label {
+    font-family: "Montserrat-SemiBold", sans-serif;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #bed5f7;
+    overflow: hidden;
+    position: absolute;
+    display: block; }
+  .checkbox input[type="checkbox"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1; }
+    .checkbox input[type="checkbox"]:checked + label::before {
+      content: "";
+      background-color: #ff2175;
+      height: 12px;
+      width: 12px;
+      display: inline-block;
+      position: absolute;
+      top: 2px;
+      left: 2px; }
+    .checkbox input[type="checkbox"]:checked ~ .checkbox-text {
+      font-family: "Montserrat-SemiBold", sans-serif;
+      color: #171a1f; }
+  .checkbox .checkbox-text {
+    font-family: "Montserrat-SemiBold", sans-serif;
+    margin-left: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #6e688f;
+    text-transform: uppercase; }
+
+/*# sourceMappingURL=style.css.map */

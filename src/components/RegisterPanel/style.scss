@@ -1,0 +1,116 @@
+.login-panel {
+  background-color: #2a1645;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .login-logo {
+    width: 1006px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+
+    img {
+      height: 43px;
+    }
+  }
+  .form-container {
+    display: flex;
+    height: calc(100vh - 150px);
+    width: 1006px;
+    opacity: .9;
+    box-shadow: 0 3.5px 41.4px 4.6px rgba(24, 10, 43, .4);
+    background-color: #2a1645;
+    padding: 20px 75px 20px 110px;
+    align-items: center;
+    justify-content: space-between;
+    .login-form,
+    .forgot-password,
+    .create-password{
+      width: 40%;
+    }
+    .form-img {
+      width: 50%;
+      display: flex;
+      margin-left: 60px;
+      img {
+        max-width: 100%;
+        margin-top: 50px;
+      }
+    }
+    h2 {
+      color: #dacfe7;
+      font-size: 30px;
+      margin-bottom: 20px
+    }
+    .form-input{
+      margin-bottom: 15px;
+    }
+    input {
+      border: 0;
+      background-color: #42355a;
+      // margin-bottom: 15px;
+      box-shadow: none;
+      outline: none;
+      color: #988eac;
+      height: 48px;
+      &::placeholder {
+        text-transform: uppercase;
+      }
+      &:focus {
+        background-color: #42355a;
+      }
+    }
+    button {
+      display: block;
+      width: 100%;
+      border-radius: 0;
+      margin-top: 20px;
+      margin-bottom: 35px;
+      height: 48px;
+      .button-text {
+        font-size: 16px;
+      }
+    }
+    .forgot-password-link {
+      color: #858585;
+      text-transform: uppercase;
+      font-size: 12px;
+      text-decoration: underline;
+      display: block;
+      text-align: center;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .forgot-password,
+    .create-password {
+      h2{
+        margin-bottom: 15px;
+      }
+      p {
+        color: #dacfe7;
+        font-size: 12px;
+        margin-bottom: 15px;
+      }
+      button {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .login-form, .forgot-password, .create-password {
+    .form-input {
+      input {
+        background-color: #42355a;
+
+        &:focus {
+          background-color: #42355a;
+        }
+      }
+    }
+  }
+}

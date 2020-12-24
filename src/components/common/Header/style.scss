@@ -1,0 +1,58 @@
+@import '../../../styles/styleguide.scss';
+
+.vr-header {
+  border-bottom: 1px solid $white-color;
+  background: $white-color;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: 2.5px 4.3px 12.2px 1.4px rgba(205, 214, 230, 0.38);
+  -webkit-box-shadow: 2.5px 4.3px 12.2px 1.4px rgba(205, 214, 230, 0.38);
+  -moz-box-shadow: 2.5px 4.3px 12.2px 1.4px rgba(205, 214, 230, 0.38);
+  height: 71px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+
+  .header-lt {
+    width: 18%;
+    padding-left: 30px;
+    border-right: 1px dashed #bcbbcb;
+    display: flex;
+    align-items: center;
+    height: 28px;
+
+    i {
+      font-size: 14px;
+    }
+
+    .header-logo {
+      margin-left: 15px;
+      margin-top: -5px;
+    }
+  }
+
+  .header-rt {
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .header-tools {
+      display: flex;
+      align-items: center;
+
+      > div {
+        margin-left: 30px;
+      }
+
+      i {
+        color: #6e688f;
+        font-size: 18px;
+      }
+    }
+  }
+}

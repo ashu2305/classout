@@ -1,0 +1,95 @@
+/* light mode variables */
+/* dark mode variables */
+/* font family */
+/*Fonts - sizes
+ --------------------------*/
+/* 14px */
+/* 40px */
+/* 30px */
+/* 24px */
+/* 20px */
+/* 18px */
+/* 16px */
+/* 12px */
+/* 10px */
+/* 8px */
+h1 {
+  font-size: 2.143rem; }
+
+h2 {
+  font-size: 1.714rem; }
+
+h3 {
+  font-size: 1.286rem; }
+
+/* Base Theme */
+.chart {
+  padding: 16px 20px;
+  background-color: #ffffff;
+  display: flex;
+  border: solid 1px #ffffff;
+  box-shadow: 2.5px 4.3px 12.2px 1.4px rgba(205, 214, 230, 0.38);
+  margin-bottom: 20px;
+  border-radius: 5px; }
+  .chart:last-child {
+    margin-bottom: 0; }
+  .chart .pie_chart {
+    width: 41%;
+    display: inline-block; }
+    .chart .pie_chart svg {
+      filter: drop-shadow(5px 5px 10px rgba(22, 19, 36, 0.38)); }
+  .chart .pie_content {
+    width: 59%;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 36px;
+    text-align: left; }
+    .chart .pie_content .content_heading {
+      margin-bottom: 20px; }
+      .chart .pie_content .content_heading span {
+        font-family: "Montserrat-Light", sans-serif;
+        color: #3b385f;
+        font-size: 32.5px; }
+      .chart .pie_content .content_heading p {
+        font-family: "Montserrat-SemiBold", sans-serif;
+        font-size: 12px;
+        opacity: 0.7;
+        color: rgba(59, 56, 95, 0.7);
+        /* margin-top: 8.5px; */ }
+    .chart .pie_content .list {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 90px; }
+      .chart .pie_content .list li {
+        font-family: "Montserrat-Medium", sans-serif;
+        opacity: 0.99;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+        /* line-height: 1.6; */
+        color: rgba(110, 104, 143, 0.99);
+        padding-left: 0px;
+        margin-bottom: 17px;
+        text-align: left;
+        display: flex;
+        align-items: center; }
+  .chart .dot {
+    height: 6.5px;
+    width: 6.5px;
+    border-radius: 50%;
+    margin-right: 9px; }
+
+.vr-dark-mode .chart {
+  box-shadow: 2.5px 4.3px 12.2px 1.4px rgba(22, 19, 36, 0.38);
+  border-color: #302b4e;
+  background-color: #27233e;
+  transition: all 1s ease-in-out; }
+  .vr-dark-mode .chart .pie_chart svg {
+    filter: drop-shadow(0 0px 10px rgba(22, 19, 36, 0.38)); }
+  .vr-dark-mode .chart .pie_content .content_heading span {
+    color: #b5aac1; }
+  .vr-dark-mode .chart .pie_content .content_heading p {
+    color: #6e688f; }
+
+/*# sourceMappingURL=style.css.map */

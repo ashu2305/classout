@@ -1,0 +1,68 @@
+/* light mode variables */
+/* dark mode variables */
+/* font family */
+/*Fonts - sizes
+ --------------------------*/
+/* 14px */
+/* 40px */
+/* 30px */
+/* 24px */
+/* 20px */
+/* 18px */
+/* 16px */
+/* 12px */
+/* 10px */
+/* 8px */
+h1 {
+  font-size: 2.143rem; }
+
+h2 {
+  font-size: 1.714rem; }
+
+h3 {
+  font-size: 1.286rem; }
+
+/* Base Theme */
+.vr-header {
+  border-bottom: 1px solid #ffffff;
+  background: #ffffff;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: 2.5px 4.3px 12.2px 1.4px rgba(205, 214, 230, 0.38);
+  -webkit-box-shadow: 2.5px 4.3px 12.2px 1.4px rgba(205, 214, 230, 0.38);
+  -moz-box-shadow: 2.5px 4.3px 12.2px 1.4px rgba(205, 214, 230, 0.38);
+  height: 71px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999; }
+  .vr-header .header-lt {
+    width: 18%;
+    padding-left: 30px;
+    border-right: 1px dashed #bcbbcb;
+    display: flex;
+    align-items: center;
+    height: 28px; }
+    .vr-header .header-lt i {
+      font-size: 14px; }
+    .vr-header .header-lt .header-logo {
+      margin-left: 15px;
+      margin-top: -5px; }
+  .vr-header .header-rt {
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px; }
+    .vr-header .header-rt .header-tools {
+      display: flex;
+      align-items: center; }
+      .vr-header .header-rt .header-tools > div {
+        margin-left: 30px; }
+      .vr-header .header-rt .header-tools i {
+        color: #6e688f;
+        font-size: 18px; }
+
+/*# sourceMappingURL=style.css.map */

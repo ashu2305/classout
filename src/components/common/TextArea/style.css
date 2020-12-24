@@ -1,0 +1,69 @@
+/* light mode variables */
+/* dark mode variables */
+/* font family */
+/*Fonts - sizes
+ --------------------------*/
+/* 14px */
+/* 40px */
+/* 30px */
+/* 24px */
+/* 20px */
+/* 18px */
+/* 16px */
+/* 12px */
+/* 10px */
+/* 8px */
+h1 {
+  font-size: 2.143rem; }
+
+h2 {
+  font-size: 1.714rem; }
+
+h3 {
+  font-size: 1.286rem; }
+
+/* Base Theme */
+.FormTextarea {
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 12px;
+  text-align: left; }
+  .FormTextarea label {
+    font-family: "Montserrat-SemiBold", sans-serif;
+    display: block;
+    margin-bottom: 8px;
+    color: #6e688f;
+    text-transform: uppercase; }
+  .FormTextarea textArea {
+    font-weight: 600;
+    font-family: "Montserrat-SemiBold", sans-serif;
+    width: 100%;
+    padding: 12px;
+    border: solid 1px #bed5f7;
+    background-color: #ffffff;
+    overflow: hidden;
+    resize: none;
+    color: #171a1f;
+    outline-color: #bed5f7;
+    position: relative; }
+    .FormTextarea textArea:focus {
+      box-shadow: 4.3px 7.4px 19.4px 2.2px rgba(214, 224, 244, 0.74);
+      border: solid 1px #bed5f7;
+      background-color: #ffffff; }
+  .FormTextarea .textareaErr {
+    border: 1px solid red; }
+  .FormTextarea .count {
+    position: absolute;
+    bottom: 345px;
+    right: 430px;
+    font-size: 10px;
+    padding: 10px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #8da2c3; }
+  .FormTextarea .err {
+    color: red; }
+
+/*# sourceMappingURL=style.css.map */

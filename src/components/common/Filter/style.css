@@ -1,0 +1,86 @@
+.filter-dropdown {
+  position: relative;
+  margin-right: 29px; }
+  .filter-dropdown label {
+    cursor: pointer;
+    display: block;
+    text-transform: uppercase;
+    font-size: 10px; }
+    .filter-dropdown label span {
+      color: #171a1f;
+      font-family: Montserrat-Medium, sans-serif; }
+    .filter-dropdown label i {
+      padding-left: 6px; }
+    .filter-dropdown label .up-down-arrow {
+      display: inline-flex;
+      opacity: .7;
+      transition: all .3s ease-in-out;
+      vertical-align: middle; }
+      .filter-dropdown label .up-down-arrow:hover {
+        opacity: 1; }
+    .filter-dropdown label .menu.showMenu + .up-down-arrow {
+      margin-top: -3px; }
+      .filter-dropdown label .menu.showMenu + .up-down-arrow svg {
+        transform: rotate(180deg);
+        transition: all .3s ease-in-out; }
+    .filter-dropdown label .menu.hideMenu + .up-down-arrow svg {
+      transition: all .3s ease-in-out; }
+  .filter-dropdown .menu {
+    background-color: white;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 200px;
+    text-transform: capitalize;
+    box-shadow: 4.3px 7.4px 19.4px 2.2px rgba(214, 224, 244, 0.74);
+    z-index: 10;
+    font-size: 12px; }
+    .filter-dropdown .menu ul {
+      list-style-type: none; }
+      .filter-dropdown .menu ul li {
+        cursor: pointer;
+        margin-bottom: 12px;
+        text-transform: uppercase; }
+        .filter-dropdown .menu ul li:hover {
+          color: #928eb3; }
+        .filter-dropdown .menu ul li:last-child {
+          margin-bottom: 0; }
+    .filter-dropdown .menu.hideMenu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.7s cubic-bezier(0, 1, 0, 1); }
+    .filter-dropdown .menu.showMenu {
+      max-height: 2000px;
+      opacity: 1;
+      padding: 15px 30px;
+      transition: max-height 1s ease-in-out; }
+  .filter-dropdown .vr-search {
+    margin-bottom: 10px; }
+    .filter-dropdown .vr-search .icon-search {
+      left: 0;
+      position: absolute;
+      color: #7c74a6;
+      font-size: initial; }
+    .filter-dropdown .vr-search input {
+      cursor: pointer;
+      border: none;
+      border-bottom: 1px solid red;
+      z-index: 11;
+      width: 100%;
+      outline: none;
+      padding-left: 25px;
+      box-sizing: border-box;
+      border-radius: 0px;
+      font-size: 12px;
+      background-color: transparent;
+      background-position: unset;
+      background-repeat: unset;
+      transition: none; }
+      .filter-dropdown .vr-search input:focus {
+        box-shadow: none;
+        width: 100%;
+        border: 1px solid grey;
+        border: none;
+        border-bottom: 1px solid red; }
+
+/*# sourceMappingURL=style.css.map */

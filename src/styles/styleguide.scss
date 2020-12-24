@@ -1,0 +1,106 @@
+/* light mode variables */
+$primary-color: #ff2175;
+$nav-color: #70718f;
+// $text-color: #000000;
+$gray-color:#cccccc;
+$white-color: #ffffff;
+$title-gray-color: #b5aac1;
+$hashtag-color: #5449d4;
+$title-color: #3b385f;
+$label-color: #6e688f;
+$text-color:  #171a1f;
+$border-color: $white-color;
+$active-color: #00b782;
+$deactive-color: #f96b55;
+$icon-color: #928eb3;
+$light-mode-background: #eff3f9;
+$lm-nav-background: #eef4fd;
+$switch-background: #f0f3f8;
+$switch-button: #d4dbe6;
+$switch-box-shadow: 0px 2px 2px 0 rgba(207, 215, 227, 0.64);
+$table-head-bg: #eef4fd;
+$arrow-color: #5d519f;
+$box-shadow: 2.5px 4.3px 12.2px 1.4px rgba(205, 214, 230, 0.38);
+
+/* dark mode variables */
+$dm-theme-background: #18152f;
+// $dm-header-background: #191431;
+$dm-nav-background: #1f1a38;
+$dm-subnav-background: #1d1832;
+$dm-nav-active-color: #e1cde4;
+$dm-nav-color: #77658b;
+$dm-border-color: #302b4e;
+$dm-background: #241d3b;
+$dm-text-color: #b5aac1;
+$dm-box-shadow: 2.5px 4.3px 12.2px 1.4px rgba(22, 19, 36, 0.38);
+$dm-icon-color: #dacfe7;
+$dm-switch-background: #1f1b3c;
+$dm-switch-button: #322c5a;
+$dm-switch-box-shadow: 0px 2px 2px 0 rgba(17, 15, 36, 0.69);
+$dm-heading-color: #dacfe7;
+$dm-label-color: #928eb3;
+$dm-background-1: #27233e;
+$dm-table-head-bg : #2c2742;
+$dm-table-text-color: #a294f2;
+
+
+/* font family */
+
+$base-font-family: 'Montserrat-Regular', sans-serif;
+$heading-font-family: 'Montserrat-SemiBold', sans-serif;
+$Montserrat-Medium: 'Montserrat-Medium', sans-serif;
+$Montserrat-Light: 'Montserrat-Light', sans-serif;
+$Montserrat-Bold: 'Montserrat-Bold', sans-serif;
+
+
+/*Fonts - sizes
+ --------------------------*/
+
+$font-size-default: 1rem;
+/* 14px */
+
+$large-font-size: 2.857rem;
+/* 40px */
+
+$font-size-30: 2.143rem;
+/* 30px */
+
+$font-size-24: 1.714rem;
+/* 24px */
+
+$font-size-20: 1.429rem;
+/* 20px */
+
+$font-size-18: 1.286rem;
+/* 18px */
+
+$font-size-16: 1.143rem;
+/* 16px */
+
+$font-size-12: 0.857rem;
+/* 12px */
+
+$font-size-10: 0.715rem;
+/* 10px */
+
+$font-size-8: 0.5em;
+/* 8px */
+
+h1{
+  font-size: $font-size-30;
+}
+
+h2 {
+  font-size: $font-size-24;
+}
+
+h3 {
+  font-size: $font-size-18;
+}
+
+
+/* Base Theme */
+
+//$base-font-size:14px;
+$base-font-size: 87.5%;
+$base-line-height:1.3;

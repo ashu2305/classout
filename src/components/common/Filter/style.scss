@@ -1,0 +1,131 @@
+.filter-dropdown {
+  position: relative;
+  margin-right: 29px;
+
+  label {
+    cursor: pointer;
+    display: block;
+    text-transform: uppercase;
+    font-size: 10px;
+
+    span {
+      color: #171a1f;
+      font-family: Montserrat-Medium, sans-serif;
+    }
+
+    i {
+      padding-left: 6px;
+    }
+
+    .up-down-arrow {
+      display: inline-flex;
+      opacity: .7;
+      transition: all .3s ease-in-out;
+      vertical-align: middle;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .menu {
+      &.showMenu {
+        + .up-down-arrow {
+          margin-top: -3px;
+
+          svg {
+            transform: rotate(180deg);
+            transition: all .3s ease-in-out;
+          }
+        }
+      }
+
+      &.hideMenu {
+        + .up-down-arrow {
+          svg {
+            transition: all .3s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+
+  .menu {
+    background-color: white;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 200px;
+    text-transform: capitalize;
+    box-shadow: 4.3px 7.4px 19.4px 2.2px rgba(214, 224, 244, 0.74);
+    z-index: 10;
+    font-size: 12px;
+
+    ul {
+      list-style-type: none;
+
+      li {
+        cursor: pointer;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+
+        &:hover {
+          color: #928eb3;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &.hideMenu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.7s cubic-bezier(0, 1, 0, 1);
+    }
+
+    &.showMenu {
+      max-height: 2000px;
+      opacity: 1;
+      padding: 15px 30px;
+      transition: max-height 1s ease-in-out;
+    }
+  }
+
+  .vr-search {
+    margin-bottom: 10px;
+
+    .icon-search {
+      left: 0;
+      position: absolute;
+      color: #7c74a6;
+      font-size: initial;
+    }
+
+    input {
+      cursor: pointer;
+      border: none;
+      border-bottom: 1px solid red;
+      z-index: 11;
+      width: 100%;
+      outline: none;
+      padding-left: 25px;
+      box-sizing: border-box;
+      border-radius: 0px;
+      font-size: 12px;
+      background-color: transparent;
+      background-position: unset;
+      background-repeat: unset;
+      transition: none;
+
+      &:focus {
+        box-shadow: none;
+        width: 100%;
+        border: 1px solid grey;
+        border: none;
+        border-bottom: 1px solid red;
+      }
+    }
+  }
+}

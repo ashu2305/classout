@@ -1,0 +1,97 @@
+@import '../../../styles/styleguide.scss';
+
+.pagination-footer {
+  border-radius: 5px;
+  box-shadow: 2.5px 4.3px 12.2px 1.4px rgba(205, 214, 230, 0.38);
+  border: solid 1px #ffffff;
+  margin-top: 8.5px;
+  background-color: white;
+  padding: 20px 24px;
+  list-style-type: none;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+
+  .ftr-left {
+    display: flex;
+    width: 30%;
+
+    span {
+      text-transform: uppercase;
+      font-size: 12px;
+      color: #171a1f;
+      margin-right: 25px;
+    }
+
+    .select-box #selectBox {
+      background-position: 30px;
+      box-shadow: none;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      padding: 0 3px;
+    }
+  }
+
+  .ftr-right {
+    width: 25%;
+
+    ul {
+
+      list-style-type: none;
+      justify-content: flex-end;
+      display: flex;
+      align-items: center;
+
+      li {
+        margin: 0px 10px;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      a:focus {
+        outline: none;
+      }
+
+      .break {
+        display: none; //this class hides the ellipses(...) between the numbers
+      }
+
+      .active {
+        color: #ff2175; //this class apply on currently active page number
+      }
+
+      .activeLink {
+        padding-left: 3px;
+        padding-bottom: 5px;
+        padding-right: 3px;
+        border-bottom: 3px solid;
+      }
+    }
+
+    .previous,
+    .next {
+      color: #5b539a;
+    }
+
+    .hidelabel {
+      display: none;
+    }
+  }
+}
+
+.vr-dark-mode {
+  .pagination-footer {
+    box-shadow: $dm-box-shadow;
+    border-color: $dm-border-color;
+    background-color: $dm-background-1;
+    transition: all 1s ease-in-out;
+
+    .ftr-left {
+      span, .select-box #selectBox {
+        color: #b5aac1;
+      }
+    }
+  }
+}

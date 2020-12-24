@@ -1,0 +1,39 @@
+/* light mode variables */
+/* dark mode variables */
+/* font family */
+/*Fonts - sizes
+ --------------------------*/
+/* 14px */
+/* 40px */
+/* 30px */
+/* 24px */
+/* 20px */
+/* 18px */
+/* 16px */
+/* 12px */
+/* 10px */
+/* 8px */
+h1 {
+  font-size: 2.143rem; }
+
+h2 {
+  font-size: 1.714rem; }
+
+h3 {
+  font-size: 1.286rem; }
+
+/* Base Theme */
+.selectBox-container label {
+  font-size: 12px;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-weight: 600;
+  text-align: left;
+  color: #6e688f;
+  text-transform: uppercase; }
+.selectBox-container .checkbox {
+  margin: 0px 5px 0px 0px;
+  width: 11px; }
+.selectBox-container .optionListContainer {
+  width: 150%; }
+
+/*# sourceMappingURL=style.css.map */

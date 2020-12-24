@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="288" height="58">
+    <defs>
+        <filter id="prefix__a">
+            <feFlood flood-color="#FF2175" flood-opacity="1" result="floodOut"/>
+            <feComposite in="floodOut" in2="SourceGraphic" operator="atop" result="compOut"/>
+            <feBlend in="compOut" in2="SourceGraphic"/>
+        </filter>
+        <filter id="prefix__b">
+            <feFlood flood-color="#FF2175" flood-opacity="1" result="floodOut"/>
+            <feComposite in="floodOut" in2="SourceGraphic" operator="atop" result="compOut"/>
+            <feBlend in="compOut" in2="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g filter="url(#prefix__a)">
+        <path fill="#F9DF83" fill-rule="evenodd" d="M110.016 12.34c-8.515 7.59-15.051 17.605-10.576 28.285 4.475 10.679 15.365 15.246 25.885 10.838 10.52-4.408 13.161-14.459 12.657-25.904-1.359-30.9-7.199-31.733-27.966-13.219zm16.37 17.791l-8.085 11.927c-.095.14-.228.246-.376.308-.131.055-.276.077-.422.061-.316-.034-.588-.239-.711-.535l-6.087-14.526c-.124-.295-.079-.633.118-.882.192-.246.511-.369.822-.31l14.173 2.6c.288.053.534.252.649.526.115.274.083.588-.081.831z" opacity=".6"/>
+    </g>
+    <path fill="#FFF" fill-rule="evenodd" d="M121.266 24.711c7.197 0 13.031 5.934 13.031 13.254 0 7.32-5.834 13.254-13.031 13.254-7.197 0-13.032-5.934-13.032-13.254 0-7.32 5.835-13.254 13.032-13.254z"/>
+    <g filter="url(#prefix__b)">
+        <path fill="#FF32A4" fill-rule="evenodd" d="M119.921 16c-10.786 3.71-20.685 10.421-20.685 22s8.28 20 19.685 20c11.407 0 17.727-8.25 21.685-19 10.689-29.025 5.624-32.05-20.685-23zm8.223 22.736l-12.065 7.875c-.142.093-.305.139-.467.139-.141 0-.285-.036-.412-.107-.278-.154-.45-.448-.45-.768v-15.75c0-.32.172-.614.45-.768.272-.152.614-.143.879.032l12.065 7.875c.246.161.396.439.396.736s-.15.575-.396.736z"/>
+    </g>
+    <text fill="#DACFE7" font-family="Transformers" font-size="50" transform="matrix(.89934 0 0 .91304 153.25 52.152)">
+        Ready
+    </text>
+    <text fill="#DACFE7" font-family="Transformers" font-size="50" transform="matrix(.89934 0 0 .91304 .272 52.152)">
+        Vide
+    </text>
+</svg>

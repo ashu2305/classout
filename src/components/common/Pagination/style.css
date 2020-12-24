@@ -1,0 +1,89 @@
+/* light mode variables */
+/* dark mode variables */
+/* font family */
+/*Fonts - sizes
+ --------------------------*/
+/* 14px */
+/* 40px */
+/* 30px */
+/* 24px */
+/* 20px */
+/* 18px */
+/* 16px */
+/* 12px */
+/* 10px */
+/* 8px */
+h1 {
+  font-size: 2.143rem; }
+
+h2 {
+  font-size: 1.714rem; }
+
+h3 {
+  font-size: 1.286rem; }
+
+/* Base Theme */
+.pagination-footer {
+  border-radius: 5px;
+  box-shadow: 2.5px 4.3px 12.2px 1.4px rgba(205, 214, 230, 0.38);
+  border: solid 1px #ffffff;
+  margin-top: 8.5px;
+  background-color: white;
+  padding: 20px 24px;
+  list-style-type: none;
+  justify-content: space-between;
+  display: flex;
+  align-items: center; }
+  .pagination-footer .ftr-left {
+    display: flex;
+    width: 30%; }
+    .pagination-footer .ftr-left span {
+      text-transform: uppercase;
+      font-size: 12px;
+      color: #171a1f;
+      margin-right: 25px; }
+    .pagination-footer .ftr-left .select-box #selectBox {
+      background-position: 30px;
+      box-shadow: none;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      padding: 0 3px; }
+  .pagination-footer .ftr-right {
+    width: 25%; }
+    .pagination-footer .ftr-right ul {
+      list-style-type: none;
+      justify-content: flex-end;
+      display: flex;
+      align-items: center; }
+      .pagination-footer .ftr-right ul li {
+        margin: 0px 10px;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 600; }
+      .pagination-footer .ftr-right ul a:focus {
+        outline: none; }
+      .pagination-footer .ftr-right ul .break {
+        display: none; }
+      .pagination-footer .ftr-right ul .active {
+        color: #ff2175; }
+      .pagination-footer .ftr-right ul .activeLink {
+        padding-left: 3px;
+        padding-bottom: 5px;
+        padding-right: 3px;
+        border-bottom: 3px solid; }
+    .pagination-footer .ftr-right .previous,
+    .pagination-footer .ftr-right .next {
+      color: #5b539a; }
+    .pagination-footer .ftr-right .hidelabel {
+      display: none; }
+
+.vr-dark-mode .pagination-footer {
+  box-shadow: 2.5px 4.3px 12.2px 1.4px rgba(22, 19, 36, 0.38);
+  border-color: #302b4e;
+  background-color: #27233e;
+  transition: all 1s ease-in-out; }
+  .vr-dark-mode .pagination-footer .ftr-left span, .vr-dark-mode .pagination-footer .ftr-left .select-box #selectBox {
+    color: #b5aac1; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,78 @@
+/* light mode variables */
+/* dark mode variables */
+/* font family */
+/*Fonts - sizes
+ --------------------------*/
+/* 14px */
+/* 40px */
+/* 30px */
+/* 24px */
+/* 20px */
+/* 18px */
+/* 16px */
+/* 12px */
+/* 10px */
+/* 8px */
+h1 {
+  font-size: 2.143rem; }
+
+h2 {
+  font-size: 1.714rem; }
+
+h3 {
+  font-size: 1.286rem; }
+
+/* Base Theme */
+.select-box {
+  display: flex;
+  flex-direction: column;
+  position: relative; }
+  .select-box label {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-align: left;
+    color: #6e688f;
+    text-transform: uppercase; }
+  .select-box #selectBox {
+    border: solid 1px #bed5f7;
+    background: url("./../../../assets/images/arrow-down.svg") no-repeat #ffffff;
+    background-size: 12px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    color: #171a1f;
+    min-width: 50px;
+    outline-color: #bed5f7;
+    padding: 12px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none; }
+    .select-box #selectBox:focus {
+      box-shadow: 4.3px 7.4px 19.4px 2.2px rgba(214, 224, 244, 0.74);
+      border: solid 1px #bed5f7; }
+    .select-box #selectBox::-ms-expand {
+      display: none; }
+    .select-box #selectBox option:hover {
+      outline: 0; }
+  .select-box.rail-type #selectBox {
+    background-size: 16px 10px;
+    background-position: 115px 16px; }
+  .select-box.content-type #selectBox {
+    background-size: 20px 13px;
+    background-position: 430px 15px; }
+  .select-box.orientation-select #selectBox {
+    background: url("./../../../assets/images/arrow-down.svg") transparent no-repeat 80px 5px;
+    background-size: 12px 8px; }
+  .select-box.platform #selectBox, .select-box.category #selectBox {
+    background: url("./../../../assets/images/arrow-down.svg") #eef4fd no-repeat 240px 17px;
+    background-size: 12px 8px; }
+  .select-box.movie-rating-select #selectBox {
+    background: url("./../../../assets/images/arrow-down.svg") #eef4fd no-repeat 90px 17px;
+    background-size: 12px 8px; }
+
+.inputErr #selectBox {
+  border: 1px solid red; }
+.inputErr .err {
+  color: red; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+@import '../../../styles/styleguide.scss';
+
+.forgotPassword{
+    .password-header{
+        margin-bottom: 44px;
+        i{
+            vertical-align: middle;
+        }
+        span{
+            margin-left: 12px;
+            font-size: 17px;
+            color: $text-color;
+        }
+    }
+    .pass-container{
+        .form-input{
+            margin-top: 26px;
+        }
+        .submitBtn{
+            margin-top: 30px;
+            padding: 0 70px;
+            height: 42px;
+        }
+    }
+}

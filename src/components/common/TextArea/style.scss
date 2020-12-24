@@ -1,0 +1,52 @@
+@import '../../../styles/styleguide.scss';
+
+.FormTextarea {
+  font-family: $heading-font-family;
+  font-size: 12px;
+  text-align: left;
+  label {
+    font-family: $heading-font-family;
+    display: block;
+    margin-bottom: 8px;
+    color: #6e688f;
+    text-transform: uppercase;
+  }
+  textArea {
+    font-weight: 600;
+    font-family: $heading-font-family;
+    width: 100%;
+    padding: 12px;
+    border: solid 1px #bed5f7;
+    background-color: #ffffff;
+    // border-radius: 5px;
+    overflow: hidden;
+    resize: none;
+    color: #171a1f;
+    outline-color: #bed5f7;
+    position: relative;
+    &:focus {
+      box-shadow: 4.3px 7.4px 19.4px 2.2px rgba(214, 224, 244, 0.74);
+      border: solid 1px #bed5f7;
+      background-color: #ffffff;
+    }
+  }
+  .textareaErr{
+    border: 1px solid red;
+  }
+  .count{
+    position: absolute;
+    bottom: 345px;
+    right: 430px;
+    font-size: 10px;
+    padding: 10px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #8da2c3;
+  }
+  .err{
+    color: red;
+  }
+}

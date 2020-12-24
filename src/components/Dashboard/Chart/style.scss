@@ -1,0 +1,96 @@
+@import '../../../styles/styleguide.scss';
+
+.chart {
+  padding: 16px 20px;
+  background-color: $white-color;
+  display: flex;
+  border: solid 1px $white-color;
+  box-shadow: 2.5px 4.3px 12.2px 1.4px rgba(205, 214, 230, 0.38);
+  margin-bottom: 20px;
+  border-radius: 5px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .pie_chart {
+    width: 41%;
+    display: inline-block;
+    svg {
+      filter: drop-shadow(5px 5px 10px rgba(22, 19, 36, 0.38));
+    }
+  }
+
+  .pie_content {
+    width: 59%;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 36px;
+    text-align: left;
+    .content_heading {
+      margin-bottom: 20px;
+      span {
+        font-family: $Montserrat-Light;
+        color: #3b385f;
+        font-size: 32.5px;
+      }
+      p {
+        font-family: $heading-font-family;
+        font-size: 12px;
+        opacity: 0.7;
+        color: rgba(59, 56, 95, 0.7);
+        /* margin-top: 8.5px; */
+      }
+    }
+    .list {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 90px;
+      li {
+        font-family: $Montserrat-Medium;
+        opacity: 0.99;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+        /* line-height: 1.6; */
+        color: rgba(110, 104, 143, 0.99);
+        padding-left: 0px;
+        margin-bottom: 17px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  .dot {
+    height: 6.5px;
+    width: 6.5px;
+    border-radius: 50%;
+    margin-right: 9px;
+  }
+}
+.vr-dark-mode {
+  .chart {
+    box-shadow: $dm-box-shadow;
+    border-color: $dm-border-color;
+    background-color: $dm-background-1;
+    transition: all 1s ease-in-out;
+    .pie_chart {
+      svg {
+        filter: drop-shadow(0 0px 10px rgba(22, 19, 36, 0.38));
+      }
+    }
+    .pie_content {
+      .content_heading {
+        span{
+          color: $dm-text-color;
+        }
+        p {
+          color: $label-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+/* light mode variables */
+/* dark mode variables */
+/* font family */
+/*Fonts - sizes
+ --------------------------*/
+/* 14px */
+/* 40px */
+/* 30px */
+/* 24px */
+/* 20px */
+/* 18px */
+/* 16px */
+/* 12px */
+/* 10px */
+/* 8px */
+h1 {
+  font-size: 2.143rem; }
+
+h2 {
+  font-size: 1.714rem; }
+
+h3 {
+  font-size: 1.286rem; }
+
+/* Base Theme */
+.btn {
+  line-height: 1.2;
+  padding: 0px 26px;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  outline: none;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; }
+  .btn .button-text {
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-size: 12px;
+    text-transform: uppercase; }
+  .btn > i.icon-arrow-left {
+    margin-bottom: 1px;
+    margin-right: 13px; }
+
+.btn-block {
+  width: 100%; }
+
+.primary-btn {
+  background-color: #ff0073;
+  border: solid 1px #ff0073;
+  text-transform: uppercase; }
+
+.primary-btn[disabled] {
+  background-color: #cccccc;
+  color: inherit;
+  cursor: not-allowed;
+  border: solid 1px #cccccc; }
+
+.secondary-btn {
+  background-color: #3fb386;
+  color: inherit; }
+
+.cancel-btn {
+  background-color: #eef4fd;
+  color: #5449d4; }
+
+.border-btn {
+  color: #ff2175;
+  border: solid 1.5px #ff2175;
+  background-color: transparent; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,27 @@
+.customInput {
+    font-family: Montserrat;
+    font-size: 12px;
+    text-align: left;
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #6e688f;
+        text-transform: uppercase;
+    }
+    input {
+        font-weight: 600;
+        width: 100%;
+        padding: 12px;
+        border: solid 1px #bed5f7;
+        background-color: #ffffff;
+        // border-radius: 5px;
+        color: #171a1f;
+        outline-color: #bed5f7;
+        &:focus {
+            box-shadow: 4.3px 7.4px 19.4px 2.2px rgba(214, 224, 244, 0.74);
+            border: solid 1px #bed5f7;
+            background-color: #ffffff;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@import '../../../styles/styleguide.scss';
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  line-height: normal;
+  margin-bottom: 12px;
+  position: relative;
+  label {
+    font-family: $heading-font-family;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #bed5f7;
+    overflow: hidden;
+    position: absolute;
+    display: block;
+  }
+
+  input[type="checkbox"] {
+    position: absolute;
+    width: 100%;
+    height: 18px;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+
+    &:checked {
+      + label {      
+        &::before {
+          content: "";
+          background-color: $primary-color;
+          height: 12px;
+          width: 12px;
+          display: inline-block;
+          position: absolute;
+          top: 2px;
+          left: 2px;        
+        }
+      }
+      ~ .checkbox-text {
+        font-family: $heading-font-family;
+        color: #171a1f;
+      }
+    }
+  }
+  .checkbox-text {
+    font-family: $heading-font-family;
+    margin-left: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #6e688f;
+    text-transform: uppercase;
+  }
+}

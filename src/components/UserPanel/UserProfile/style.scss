@@ -1,0 +1,127 @@
+@import '../../../styles/styleguide.scss';
+
+.userProfile {
+  .profile {
+    display: flex;
+
+    .profileImg {
+      height: 115px;
+      width: 115px;
+      border-radius: 50%;
+    }
+
+    .profile-rt {
+      margin-left: 32px;
+      align-self: center;
+
+      span {
+        font-family: $heading-font-family;
+        font-size: 12px;
+        color: $label-color;
+        display: block;
+      }
+
+      .profileBtn {
+        margin-top: 17px;
+        cursor: pointer;
+        width: 148px;
+        display: inline-block;
+        line-height: 42px;
+        font-family: $heading-font-family;
+        font-size: 12px;
+        border-radius: 5px;
+        text-align: center;
+        color: $hashtag-color;
+        background-color: $lm-nav-background;
+      }
+    }
+  }
+
+  .userDetail {
+    margin-top: 38px;
+
+    .form-input {
+      margin-top: 26px;
+    }
+
+    .textDisable {
+      background-color: #cccccc;
+      color: inherit;
+      border: solid 1px #cccccc;
+      cursor: not-allowed;
+    }
+
+    .actionBtn {
+      margin-top: 35px;
+
+      .submitBtn {
+        padding: 0 70px;
+        height: 42px;
+      }
+    }
+  }
+
+  @mixin loadingAnimation {
+    // border: 1px solid #f6f7f8;
+    background-color: rgb(202, 202, 202);
+    // margin: 15px;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: placeholderAnimate;
+    // background: #f6f7f8; // Fallback
+    background: linear-gradient(to right, #eee 2%, #ddd 18%, #eee 33%);
+  }
+
+  @keyframes placeholderAnimate {
+    0% {
+      background-position: -300px 0;
+    }
+    100% {
+      background-position: 300px 0;
+    }
+  }
+
+  .profilebarLoader {
+    display: block;
+    height: 38px;
+    margin-top: 26px;
+    @include loadingAnimation();
+  }
+
+  .profileLoader {
+    display: flex;
+
+    .img-loader {
+      height: 115px;
+      width: 115px;
+      border-radius: 50%;
+      display: inline-block;
+      @include loadingAnimation();
+    }
+
+    .profile-rt-loader {
+      width: 40%;
+      margin-left: 32px;
+      align-self: center;
+
+      span {
+        margin-top: 0;
+      }
+
+      .title-loader {
+        margin-bottom: 15px;
+        height: 20px;
+        width: 50%;
+      }
+    }
+  }
+
+  .userDetail-loader {
+    .btnLoader {
+      margin-top: 35px;
+      width: 40%;
+    }
+  }
+}

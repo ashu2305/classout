@@ -1,0 +1,37 @@
+/* light mode variables */
+/* dark mode variables */
+/* font family */
+/*Fonts - sizes
+ --------------------------*/
+/* 14px */
+/* 40px */
+/* 30px */
+/* 24px */
+/* 20px */
+/* 18px */
+/* 16px */
+/* 12px */
+/* 10px */
+/* 8px */
+h1 {
+  font-size: 2.143rem; }
+
+h2 {
+  font-size: 1.714rem; }
+
+h3 {
+  font-size: 1.286rem; }
+
+/* Base Theme */
+.vr-notification {
+  position: relative; }
+  .vr-notification .new-notification {
+    width: 6px;
+    height: 6px;
+    background-color: #ff2175;
+    position: absolute;
+    top: 3px;
+    border-radius: 20px;
+    left: 2px; }
+
+/*# sourceMappingURL=style.css.map */
